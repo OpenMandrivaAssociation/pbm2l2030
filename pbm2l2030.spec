@@ -8,7 +8,6 @@ URL:		http://home.fhtw-berlin.de/~s0226426/projects/pbm2l2030_faq.html
 Source0:	http://home.fhtw-berlin.de/~s0226426/projects/pbm2l2030-1.4.tar.bz2
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Lexmark 2030 Color Jetprinter printer driver.
