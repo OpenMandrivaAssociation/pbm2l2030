@@ -1,7 +1,7 @@
 Summary:	Driver for the Lexmark 2030 printer
 Name:		pbm2l2030
 Version:	1.4
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group:		System/Printing
 License:	GPL
 URL:		http://home.fhtw-berlin.de/~s0226426/projects/pbm2l2030_faq.html
@@ -35,5 +35,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%doc README* LICENSE *pbm
+%doc README* LICENSE 
 %attr(0755,root,root) %{_bindir}/*
