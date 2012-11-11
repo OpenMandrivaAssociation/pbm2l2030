@@ -1,0 +1,26 @@
+--- makefile	1999-09-08 13:17:22.000000000 +0200
++++ makefile.oden	2008-12-25 10:30:51.000000000 +0100
+@@ -1,18 +1,20 @@
+ #
+ # makefile for the lexmark 2030 printer driver
+ #
++CFLAGS = -Wall
++LDFLAGS = 
+ 
+ # the main target: pbm2l2030 binary
+ pbm2l2030: pbm2l2030.o pbm.o
+-	gcc -o pbm2l2030 pbm2l2030.o pbm.o -O
++	gcc $(CFLAGS) $(LDFLAGS) -o pbm2l2030 pbm2l2030.o pbm.o -O
+ 
+ # the pbm module
+ pbm.o: pbm.h pbm.c
+-	gcc -c pbm.c
++	gcc $(CFLAGS) -c pbm.c
+ 
+ # the main module
+ pbm2l2030.o: pbm.h pbm2l2030.c
+-	gcc -c pbm2l2030.c
++	gcc $(CFLAGS) -c pbm2l2030.c
+ 
+ # use this to test your printing configuration
+ test:
